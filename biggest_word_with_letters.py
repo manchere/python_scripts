@@ -1,3 +1,4 @@
+#first solution
 def high(x):
     ls = x.split(' ')
     biggest = 0 
@@ -12,6 +13,9 @@ def high(x):
             lar = val
     return lar
             
-    
+
+# refactored solution
+def high_ref(x):
+    return max(x.split(' '), key = lambda k: sum(ord(c) - 96 for c in k )) 
             
                 
