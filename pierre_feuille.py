@@ -2,7 +2,7 @@ import maya.cmds as cmds
 import random
 
 def aug(axe):
-    return -random.uniform(-0.2,02) if axe < 0 else random.uniform(-0.2,0.2)
+    return -random.uniform(-0.2,0.2) if axe < 0 else random.uniform(-0.2,0.2)
 
 def caillou():
     cmds.polySphere(sx=20,sy=20)
